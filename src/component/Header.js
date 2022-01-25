@@ -8,7 +8,7 @@ function Header() {
     const userLoggedIn = getToken ? true : false
     const handleLogout = () => {
         localStorage.setItem('user-loggedIn','')
-        Navigate('/')
+        Navigate('/Todo')
         setIsActive(false);
     }
     const handleDropdown = () => {

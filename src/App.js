@@ -8,11 +8,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <Header />
+        <Header />
         <Routes>
-          <Route path="/" element={<Login />}/>
-          <Route path="/todo" element={<UpdateTodo />} />
-          <Route path="todo/edit/:listId" element={<EditTodo />} />
+          <Route path="/Todo" element={<Login />}/>
+          <Route path="/update" element={<UpdateTodo />} />
+          <Route path="update/edit/:listId" element={<EditTodo />} />
       </Routes>
       </Router>
     </div>

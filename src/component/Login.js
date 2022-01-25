@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link,useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 function Login() {
     let navigate = useNavigate()
@@ -27,7 +27,7 @@ function Login() {
             setUserErr('Please enter valid email')
         }else{
             localStorage.setItem("user-loggedIn", inputVal.username)
-            navigate(`/todo`)
+            navigate(`/update`)
             setUserErr('')
         }
     }

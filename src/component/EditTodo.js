@@ -8,7 +8,6 @@ function EditTodo() {
     const {listId} = useParams();
     const navigate = useNavigate();
     const listItem = useSelector(state => state.allList.taskList);
-    const [testId] = listItem.map(e => e.id);
     const dispatch = useDispatch();
     const [filterList] = listItem.filter(list => (list.id === listId));
     useEffect(() => {
