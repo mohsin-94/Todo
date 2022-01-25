@@ -1,0 +1,72 @@
+.color-red{
+  color: red;
+}
+.text-right{
+  text-align: right;
+}
+.ui.top.attached.header{
+  display: flex;
+    margin-bottom: 3rem;
+}
+.loginfo{
+  margin-left: auto;
+  margin-right: 0;
+}
+/* profile */
+.profile{
+  cursor: pointer;
+}
+.profileSec{
+  width: 40px;
+  height: 40px;
+  background: rgba(217, 239, 255, 1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.profileArrow{
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  position: absolute;
+  right: -26px;
+  top: 5px;
+}
+span.profileLogout {
+  position: absolute;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  top: 34px;
+  right: 0;
+  z-index: 1;
+  cursor: pointer;
+  box-shadow: 0 0 9px #dadada;
+  display: none;
+}
+span.profileLogout.active{
+  display: block;
+}
+span.profileLogout:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  top: -4px;
+  transform: rotate(45deg);
+}
+/* utility */
+.d-flex{
+  display: flex;
+}
+.align-items-center{
+  align-items: center;
+}
+.position-relative{
+  position: relative;
+}
